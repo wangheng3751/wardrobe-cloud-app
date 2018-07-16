@@ -12,6 +12,7 @@ import DressCollocation from '../modules/dressCollocation/components/index';
 import Mine from '../modules/mine/components/index';
 import Clothes from '../modules/clothes/components/index';
 import TabIcon from '../common/tabIcons';
+import * as global from '../common/global';
 
 class AppRouter extends Component {
     static propTypes = {
@@ -55,8 +56,11 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff'
     },
     titleStyle: {
-        color: 'white',
-        marginTop: (Platform.OS === 'android') ? -8 : 0,
+        color: 'white'
+    },
+    navigationBarStyle: {
+        backgroundColor:  global.mainColor,
+        height: (Platform.OS === 'android') ? 44 : 64
     }
 })
 
@@ -88,6 +92,8 @@ const scenes = Actions.create(
                     hideNavBar={true}
                     component={Mine}                           
                     icon={TabIcon}
+                    title="我的"
+                    navigationBarStyle={styles.navigationBarStyle}
                     titleStyle={styles.titleStyle} />
             </Scene>
     </Scene>

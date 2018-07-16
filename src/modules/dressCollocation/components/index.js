@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, Platform, TextInput, View, Dimensions, Text, Image, TouchableOpacity } from 'react-native';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import NavigationBar from "../../../common/navigationBar";
 
 class DressCollocation extends Component {
     constructor(props) {
@@ -14,8 +15,8 @@ class DressCollocation extends Component {
 
     render() {
         return (
-            <View style={[styles.center,styles.container]}>
-                <Text>搭配</Text>
+            <View style={[styles.container]}>
+                <NavigationBar title="搭配"/>
             </View>   
         )
     }  
