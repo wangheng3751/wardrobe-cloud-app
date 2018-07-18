@@ -8,7 +8,8 @@ import {
 import { connect } from 'react-redux';
 import { Scene, Router, TabBar, Modal, Schema, Actions, Reducer, ActionConst } from 'react-native-router-flux';
 import LoginPage from '../modules/auth/components/login';
-import DressCollocation from '../modules/dressCollocation/components/index';
+import DressCollocationList from '../modules/dressCollocation/components/index';
+import DressCollocation from '../modules/dressCollocation/components/dressCollocation';
 import Mine from '../modules/mine/components/index';
 import Clothes from '../modules/clothes/components/index';
 import TabIcon from '../common/tabIcons';
@@ -67,6 +68,7 @@ const styles = StyleSheet.create({
 const scenes = Actions.create(
     <Scene key="root" hideNavBar={true}>
         <Scene key="login" component={LoginPage} title="登录" hideNavBar={true} />
+        <Scene key="dressCollocation" component={DressCollocation} title="服裝搭配" hideNavBar={true} />
         <Scene key="tabbar"                
                 tabs={true}
                 initial
@@ -78,7 +80,7 @@ const scenes = Actions.create(
                 titleStyle={styles.titleStyle}>
                 <Scene key="home"
                     hideNavBar={true}
-                    component={DressCollocation}
+                    component={DressCollocationList}
                     icon={TabIcon}
                     titleStyle={styles.titleStyle}/>
 
