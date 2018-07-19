@@ -13,6 +13,12 @@
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* wardrobeCloudAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* wardrobeCloudAppTests.m */; };
+		115662292100671900A4F3FB /* QBImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115662022100671900A4F3FB /* QBImagePicker.framework */; };
+		1156622A2100671900A4F3FB /* RSKImageCropper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115662032100671900A4F3FB /* RSKImageCropper.framework */; };
+		1156622B210067AE00A4F3FB /* QBImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115662022100671900A4F3FB /* QBImagePicker.framework */; };
+		1156622C210067AE00A4F3FB /* QBImagePicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 115662022100671900A4F3FB /* QBImagePicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1156622E210067B400A4F3FB /* RSKImageCropper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115662032100671900A4F3FB /* RSKImageCropper.framework */; };
+		1156622F210067B400A4F3FB /* RSKImageCropper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 115662032100671900A4F3FB /* RSKImageCropper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -38,6 +44,7 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		FE4D0297232F45348DC720C4 /* libimageCropPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE28DA966B414BB18B1A42AB /* libimageCropPicker.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +89,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = wardrobeCloudApp;
+		};
+		115662672100685300A4F3FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E23B049A42CC4B9AB1ED0DDA /* imageCropPicker.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3400A8081CEB54A6008A0BC7;
+			remoteInfo = imageCropPicker;
 		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -316,6 +330,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1156622D210067AE00A4F3FB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1156622C210067AE00A4F3FB /* QBImagePicker.framework in Embed Frameworks */,
+				1156622F210067B400A4F3FB /* RSKImageCropper.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
@@ -326,6 +355,8 @@
 		00E356EE1AD99517003FC87E /* wardrobeCloudAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wardrobeCloudAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* wardrobeCloudAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wardrobeCloudAppTests.m; sourceTree = "<group>"; };
+		115662022100671900A4F3FB /* QBImagePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QBImagePicker.framework; sourceTree = "<group>"; };
+		115662032100671900A4F3FB /* RSKImageCropper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RSKImageCropper.framework; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* wardrobeCloudApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wardrobeCloudApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -343,6 +374,8 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		BE28DA966B414BB18B1A42AB /* libimageCropPicker.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libimageCropPicker.a; sourceTree = "<group>"; };
+		E23B049A42CC4B9AB1ED0DDA /* imageCropPicker.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = imageCropPicker.xcodeproj; path = "../node_modules/react-native-image-crop-picker/ios/imageCropPicker.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -359,11 +392,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
+				1156622A2100671900A4F3FB /* RSKImageCropper.framework in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
+				1156622B210067AE00A4F3FB /* QBImagePicker.framework in Frameworks */,
+				1156622E210067B400A4F3FB /* RSKImageCropper.framework in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
@@ -371,6 +407,8 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				115662292100671900A4F3FB /* QBImagePicker.framework in Frameworks */,
+				FE4D0297232F45348DC720C4 /* libimageCropPicker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +497,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		115662012100671900A4F3FB /* ImageCropPickerSDK */ = {
+			isa = PBXGroup;
+			children = (
+				115662022100671900A4F3FB /* QBImagePicker.framework */,
+				115662032100671900A4F3FB /* RSKImageCropper.framework */,
+			);
+			name = ImageCropPickerSDK;
+			path = "../node_modules/react-native-image-crop-picker/ios/ImageCropPickerSDK";
+			sourceTree = "<group>";
+		};
+		1156623C2100685100A4F3FB /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				BE28DA966B414BB18B1A42AB /* libimageCropPicker.a */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		115662642100685300A4F3FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				115662682100685300A4F3FB /* libimageCropPicker.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		139105B71AF99BAD00B5F7CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -519,6 +583,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				115662012100671900A4F3FB /* ImageCropPickerSDK */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
 			);
 			name = Frameworks;
@@ -557,6 +622,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
+				E23B049A42CC4B9AB1ED0DDA /* imageCropPicker.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -578,6 +644,7 @@
 				00E356EF1AD99517003FC87E /* wardrobeCloudAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				1156623C2100685100A4F3FB /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -633,6 +700,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				1156622D210067AE00A4F3FB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -685,7 +753,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -715,6 +783,10 @@
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 115662642100685300A4F3FB /* Products */;
+					ProjectRef = E23B049A42CC4B9AB1ED0DDA /* imageCropPicker.xcodeproj */;
+				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
@@ -808,6 +880,13 @@
 			fileType = archive.ar;
 			path = libRCTVibration.a;
 			remoteRef = 00C302E31ABCB9EE00DB3ED1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		115662682100685300A4F3FB /* libimageCropPicker.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libimageCropPicker.a;
+			remoteRef = 115662672100685300A4F3FB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		139105C11AF99BAD00B5F7CC /* libRCTSettings.a */ = {
@@ -1172,9 +1251,17 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+				);
 				INFOPLIST_FILE = wardrobeCloudAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1189,9 +1276,17 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+				);
 				INFOPLIST_FILE = wardrobeCloudAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1207,6 +1302,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+				);
 				INFOPLIST_FILE = wardrobeCloudApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1224,6 +1323,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+				);
 				INFOPLIST_FILE = wardrobeCloudApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1248,8 +1351,16 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+				);
 				INFOPLIST_FILE = "wardrobeCloudApp-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1274,8 +1385,16 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+				);
 				INFOPLIST_FILE = "wardrobeCloudApp-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1299,8 +1418,16 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+				);
 				INFOPLIST_FILE = "wardrobeCloudApp-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1324,8 +1451,16 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+				);
 				INFOPLIST_FILE = "wardrobeCloudApp-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",

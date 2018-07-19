@@ -28,7 +28,10 @@ class DressCollocationList extends Component {
     componentWillReceiveProps(nextProps,nextState){
         
     }
-
+    dressCollocation(){
+        this.setState({menu:false});
+        Actions.dressCollocation();
+    }
     render() {
         return (
             <View style={[styles.container]}>
@@ -80,7 +83,7 @@ class DressCollocationList extends Component {
                         {
                             this.state.menu&&
                             <View style={styles.menus}>
-                                <TouchableOpacity onPress={()=>{Actions.dressCollocation()}}>
+                                <TouchableOpacity onPress={ this.dressCollocation.bind(this) }>
                                     <View style={[styles.menu_view,{borderBottomColor:"#fff",borderBottomWidth:1}]}><Text style={styles.tag_text}>添加</Text></View>
                                 </TouchableOpacity>
                                 <TouchableOpacity onPress={()=>{this.setState({checking:!this.state.checking})}}>
